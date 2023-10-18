@@ -41,11 +41,11 @@ Make sure you have installed the required dependencies before running the projec
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Pratik94229/Chicken-Disease-Classification-Project
+git clone https://github.com/Bhoomika-gp/Chicken-Disease-Classification.Project
 
 ```
 ```
-cd Chicken-Disease-Classification-Project
+cd Chicken-Disease-Classification.Project
 ```
 
 2. Create a conda environment after opening the repository
