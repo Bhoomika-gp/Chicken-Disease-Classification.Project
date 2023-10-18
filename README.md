@@ -1,5 +1,27 @@
-# Chicken-Disease-Classification.Project
+# Chicken Disease Classification
 
+This project aims to classify chicken fecal samples into two categories: diseased (Coccidiosis) and healthy. The classification is based on analyzing images of the fecal samples using computer vision techniques.
+
+
+## Project Structure
+
+The project follows a modular structure, consisting of several stages and pipelines which includes :-
+
+1. `stage_01_data_ingestion.py`: This stage is responsible for data ingestion. It includes functions for downloading, extracting, and preprocessing the dataset.
+2. `stage_02_prepare_base_model.py`: In this stage, the base model for the classification task is prepared. It involves loading a pre-trained model, modifying it if necessary, and preparing it for training.
+3. `stage_03_training.py`: The training stage is responsible for training the model using the prepared dataset. It includes functions for data augmentation, model training, and saving the trained model.
+4. `stage_04_evaluation.py`: This stage focuses on evaluating the performance of the trained model. It includes functions for loading the trained model, performing inference on test data, and calculating evaluation metrics.
+
+## Requirements
+
+To run this project, you need the following requirements:
+
+- Python (version 3.8 or above)
+- TensorFlow 
+- Flask 
+- DVC 
+
+Make sure you have installed the required dependencies before running the project.
 
 ## Workflows
 
@@ -14,44 +36,65 @@
 9. Update the dvc.yaml
 
 
-# How to run?
-### STEPS:
+## Usage
 
-Clone the repository
-
-```bash
-https://github.com/entbappy/Chicken-Disease-Classification--Project
-```
-### STEP 01- Create a conda environment after opening the repository
+1. Clone the repository:
 
 ```bash
-conda create -n cnncls python=3.8 -y
+git clone https://github.com/Pratik94229/Chicken-Disease-Classification-Project
+
+```
+```
+cd Chicken-Disease-Classification-Project
 ```
 
-```bash
-conda activate cnncls
+2. Create a conda environment after opening the repository
 ```
+conda create -p venv python==3.8 
+conda activate venv/
 
+```
+3. Install the dependencies:
 
-### STEP 02- install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
 
+4. Finally run the following command
+
+```
+python app.py
+
+```
+
+5. Open Terminal
+
+### DVC cmd
+```
+dvc init
+dvc repro
+
+```
+6. For visualizing pipeline
+```
+dvc dag
+
+```
+
+7. Flask App:
+
+To create a front-end interface for the application, run the Flask app:
+
 ```bash
-# Finally run the following command
 python app.py
 ```
 
-Now,
-```bash
-open up you local host and port
-```
+8. Access the app:
 
+Open your browser and go to 
 
-### DVC cmd
+localhost to access the application.
 
-1. dvc init
-2. dvc repro
-3. dvc dag
+# Conclusion
+In summary, this project showcases the effective classification of chicken fecal samples into two categories: diseased or healthy, employing advanced computer vision methodologies. Its organized, modular structure, coupled with the utilization of pipelines, ensures that the workflow is not only comprehensible but also readily replicable. Furthermore, the incorporation of a Flask application empowers users to effortlessly engage with the classification model.
