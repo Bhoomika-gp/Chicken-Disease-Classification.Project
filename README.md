@@ -7,10 +7,10 @@ This project aims to classify chicken fecal samples into two categories: disease
 
 The project follows a modular structure, consisting of several stages and pipelines which includes :-
 
-1. `stage_01_data_ingestion.py`: This stage is responsible for data ingestion. It includes functions for downloading, extracting, and preprocessing the dataset.
-2. `stage_02_prepare_base_model.py`: In this stage, the base model for the classification task is prepared. It involves loading a pre-trained model, modifying it if necessary, and preparing it for training.
-3. `stage_03_training.py`: The training stage is responsible for training the model using the prepared dataset. It includes functions for data augmentation, model training, and saving the trained model.
-4. `stage_04_evaluation.py`: This stage focuses on evaluating the performance of the trained model. It includes functions for loading the trained model, performing inference on test data, and calculating evaluation metrics.
+1. stage_01_data_ingestion.py : This stage is responsible for data ingestion. It includes functions for downloading, extracting, and preprocessing the dataset.
+2. stage_02_prepare_base_model.py : In this stage, the base model for the classification task is prepared. It involves loading a pre-trained model, modifying it if necessary, and preparing it for training.
+3. stage_03_training.py : The training stage is responsible for training the model using the prepared dataset. It includes functions for data augmentation, model training, and saving the trained model.
+4. stage_04_evaluation.py : This stage focuses on evaluating the performance of the trained model. It includes functions for loading the trained model, performing inference on test data, and calculating evaluation metrics.
 
 ## Requirements
 
@@ -92,9 +92,24 @@ python app.py
 
 8. Access the app:
 
-Open your browser and go to 
+Open your browser and port 
 
 localhost to access the application.
 
+## About MLflow & DVC
+
+MLflow
+
+ - Its Production Grade
+ - Trace all of your expriements
+ - Logging & taging your model
+
+
+DVC 
+
+ - Its very lite weight for POC only
+ - lite weight expriements tracker
+ - It can perform Orchestration (Creating Pipelines)
+   
 # Conclusion
 In summary, this project showcases the effective classification of chicken fecal samples into two categories: diseased or healthy, employing advanced computer vision methodologies. Its organized, modular structure, coupled with the utilization of pipelines, ensures that the workflow is not only comprehensible but also readily replicable. Furthermore, the incorporation of a Flask application empowers users to effortlessly engage with the classification model.
